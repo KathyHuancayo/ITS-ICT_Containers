@@ -1,6 +1,6 @@
 # start from a base image
 FROM ubuntu:latest
-MANTAINER="Katherinne Huancayo Ramos"
+LABEL MANTAINER="Katherinne Huancayo Ramos"
 USER root
 RUN apt update && apt install -y redis-server
 EXPOSE 6380/tcp
