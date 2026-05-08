@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-LABEL MANTAINER="Katherinne Huancayo Ramos"
+LABEL MANTAINER="Denis Maggiorotto"
 
 USER root
 
