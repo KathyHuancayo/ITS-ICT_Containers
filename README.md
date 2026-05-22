@@ -1,4 +1,4 @@
-
+# modificado por mi
 # Create a Redis server image
 
 Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. In this assignment, you will follow the Redis installation instructions here after to code a Dockerfile and build a Docker image with Redis server installed.
