@@ -1,0 +1,43 @@
+---
+library:
+  name: "Biblioteca Centrale"
+  street: "Via dell'Università"
+  street_number: 104
+  sections:
+    - name: "Fantascienza"
+      section_arguments:
+        - "Spazio"
+        - "Viaggi nel tempo"
+        - "Futuro"
+      books:
+        - name: "Dune"
+          author: "Frank Herbert"
+          publication_date: 1965-08-01
+          cover_image: !!binary |
+            iVBORw0KGgoAAAANSUhEUgAA...
+          excerpt: >
+            Sul pianeta desertico Arrakis, l'acqua è più preziosa dell'oro, 
+            e la spezia è la chiave per il controllo dell'universo conosciuto.
+
+        - name: "Fondazione"
+          author: "Isaac Asimov"
+          publication_date: 1951-06-01
+          cover_image: !!binary |
+            SGVsbG8gV29ybGQ=
+          excerpt: >
+            Lo psicostorico Hari Seldon prevede l'imminente caduta dell'Impero 
+            Galattico e crea la Fondazione per salvare la conoscenza umana.
+
+    - name: "Sviluppo Software"
+      section_arguments:
+        - "Programmazione"
+        - "Architettura"
+      books:
+        - name: "Clean Code"
+          author: "Robert C. Martin"
+          publication_date: 2008-08-01
+          cover_image: !!binary |
+            R2V0dGluZyBTdGFydGVk
+          excerpt: >
+            Anche il codice fatto male può funzionare. Ma se non è pulito, 
+            può mettere in ginocchio un'azienda di sviluppo.
