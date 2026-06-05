@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: multicontainer-deploy
+  labels:
+    name: multicontainer-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: multicontainer-deploy
+  template:
+    metadata:
+      labels:
+        name: multicontainer-deploy
+    spec:
+      containers:
+      - name: mysql
+        image: mysql:5.7
+        ports:
+        - containerPort: 3306
+        env:
+          - name: MYSQL_ROOT_PASSWORD
+            value: "somewordpress"
+          - name: MYSQL_DATABASE
+            value: "wordpress"
+          - name: MYSQL_USER
+            value: "wordpress"
+          - name: MYSQL_PASSWORD
+            value: "wordpress"
+      - name: wordpress
+        image: wordpress:latest
+        ports:
+        - containerPort: 80
+        env:
+          - name: WORDPRESS_DB_HOST
+            value: "localhost"
+          - name: WORDPRESS_DB_USER
+            value: "wordpress"
+          - name: WORDPRESS_DB_PASSWORD
+            value: "wordpress"
+          - name: WORDPRESS_DB_NAME
+            value: "wordpress"
