@@ -1,0 +1,9 @@
+Z:\ITS-ICT_Containers-master\library_app\BooksService\publish\BooksService.exe
+Z:\ITS-ICT_Containers-master\library_app\BooksService\publish\appsettings.Development.json
+Z:\ITS-ICT_Containers-master\library_app\BooksService\publish\appsettings.json
+Z:\ITS-ICT_Containers-master\library_app\BooksService\publish\BooksService.dll
+Z:\ITS-ICT_Containers-master\library_app\BooksService\publish\BooksService.deps.json
+Z:\ITS-ICT_Containers-master\library_app\BooksService\publish\BooksService.runtimeconfig.json
+Z:\ITS-ICT_Containers-master\library_app\BooksService\publish\BooksService.pdb
+Z:\ITS-ICT_Containers-master\library_app\BooksService\publish\Microsoft.AspNetCore.OpenApi.dll
+Z:\ITS-ICT_Containers-master\library_app\BooksService\publish\Microsoft.OpenApi.dll

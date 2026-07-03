@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  book-service:
+    build: ./BooksService
+    ports:
+      - "5000:8080"
+    networks: 
+      - frontend
+      - backend
+    depends_on: 
+      - books-db
+    restart: always
+    environment: 
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_URLS: "http://+:8080"
+      ConnectionStrings__DefaultConnection: "Server=books-db;Database=BooksDb;User Id=sa;Password=TuPasswordSeguro123!;Encrypt=False;"
+  books-db:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    networks: 
+      - backend
+    restart: always
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "TuPasswordSeguro123!"
+    volumes: 
+      - dbdata:/var/opt/mssql
+networks:
+  frontend:
+  backend:
+volumes:
+     dbdata:
